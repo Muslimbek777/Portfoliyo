@@ -35,8 +35,8 @@ body {
 }
 .header-nav {
   position: fixed;
-  left: 76px;
-  right: 83px;
+  left: 74px;
+  right: 74px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,11 +66,11 @@ body {
 }
 .section-img {
   width: 350px;
-  height: 480px;
-  border-radius: 20px;
+  height: 450px;
+  border-radius: 50px;
 }
 .section-img:hover {
-  animation: bir 2s linear;
+  animation: photo 2s linear;
 }
 .header-btn {
   border: none;
@@ -90,6 +90,13 @@ body {
 .main-section {
   padding-top: 84px;
   padding-bottom: 20px;
+}
+.ikkinchi-section {
+}
+.ikki-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 .ota {
   display: flex;
@@ -180,7 +187,10 @@ body {
 .li-img {
   border-radius: 50%;
   width: 150px;
-  height: 200px;
+  height: 150px;
+}
+.li-img:hover {
+  animation: bir 2s linear;
 }
 .li-name {
   color: #0000ff;
@@ -198,10 +208,11 @@ body {
 .father {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 150px;
 }
 .child {
-  width: 500px;
+  width: 450px;
 }
 .child-text {
   margin: 0;
@@ -230,6 +241,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.besh-li {
+  text-align: center;
+}
+.besh-img {
+  width: 200px;
+  height: 180px;
 }
 .besh-name {
   color: #0000ff;
@@ -245,10 +266,16 @@ body {
   list-style-type: none;
   padding-left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   padding-block: 20px;
+  gap: 20px;
+}
+.a-img {
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
 }
 .yetti-section {
   padding-block: 20px;
@@ -297,5 +324,16 @@ body {
 @keyframes bir {
   100% {
     box-shadow: #0000ff 0px 30px 90px;
+  }
+}
+@keyframes photo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
